@@ -25,7 +25,7 @@ mkfs.ext4 -L ROOT $PARTITION
 mount $PARTITION /mnt
 
 # Install essential packages
-basestrap /mnt base base-devel runit elogind-runit linux-lts linux-firmware intel-ucode networkmanager networkmanager-runit cronie cronie-runit htop neovim
+basestrap /mnt base base-devel runit elogind-runit linux-lts linux-firmware intel-ucode networkmanager networkmanager-runit cronie cronie-runit htop neovim rsm
 
 # Generate fstab
 fstabgen -U /mnt >> /mnt/etc/fstab

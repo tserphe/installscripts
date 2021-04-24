@@ -71,7 +71,8 @@ artools-chroot /mnt grub-install --target=i386-pc --recheck $DEVICE
 artools-chroot /mnt grub-mkconfig -o /boot/grub/grub.cfg
 
 # Download LARBS script
-curl https://raw.githubusercontent.com/tserphe/LARBS/master/larbs.sh >> /mnt/root/larbs.sh
+curl https://raw.githubusercontent.com/LukeSmithxyz/LARBS/master/larbs.sh >> /mnt/root/larbs.sh
+curl https://raw.githubusercontent.com/LukeSmithxyz/LARBS/master/progs.csv >> /mnt/root/progs.csv
 
 # Unmount all partitions
 umount -R /mnt
